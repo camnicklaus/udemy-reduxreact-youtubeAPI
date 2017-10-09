@@ -5,14 +5,16 @@ import YTSearch from 'youtube-api-search';
 import SearchBar from './components/search_bar';
 import VideoList from './components/video_list';
 import VideoDetail from './components/video_detail';
-const dotenv = require('dotenv');
-dotenv.load();
 
-// const API_KEY = 'AIzaSyBTEqKOXUs08wphhbkxV5wQAtjogGBLcA0';//need to configure .env;
-const API_KEY = procss.env.YOUTUBE_API_KEY;
+
+// console.log(process.env.YOUTUBE_API_KEY)
+// envVars()
+
+
+const API_KEY = process.env.YOUTUBE_API_KEY;
 // create a new component. produces html
 
-// console.log(process.env)
+
 
 class App extends Component {
 
